@@ -80,8 +80,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function createMovieList(films, paernt) {
         paernt.innerHTML = "";
-
         sortArr(films);
+        
         films.forEach((film, i) => {
             paernt.innerHTML += `
                 <li class="promo__interactive-item">${i + 1} ${film}
